@@ -1,0 +1,311 @@
+/* start of global rules */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        width: 970px;
+    }
+
+    @media (max-width:1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+}
+.orange{
+    color: var(--main-colr);
+}
+/* end of global rules */
+/* start of components  */
+:root{
+--main-colr:#e0ad2f;
+--secondary-color:#ffb600;
+--main-padding:50px;
+--third-color:#24242c;
+}
+/* end of component */
+/* start header */
+header{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--third-color);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+header img{
+        width: 100px;
+}
+/* end header */
+/* start offer */
+.offer{
+    padding-top: calc(var(--main-padding) + 100px);
+    padding-bottom: calc(var(--main-padding) + 100px);
+    background-color: var(--main-colr);
+}
+.offer .container{
+    text-align: center;
+    position: relative;
+}
+.offer .container .one{
+    text-transform: capitalize;
+        color: #fff;
+        font-weight: 700;
+        font-size: 35px;
+}
+.offer .container .two{
+        margin-top: 30px;
+            color: #24242c;
+            font-weight: 650;
+}
+.offer .container .three{
+width: 180px;
+    height: 60px;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 7px;
+}
+/* end offer */
+/* start second section */
+.second{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.second .container{
+display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.second .container div{
+    position: relative;
+}
+.second .container div .img{
+    width: 80%;
+        height: 140px;
+        background-color: var(--secondary-color);
+}
+.second .container div h3{
+    color: var(--third-color);
+}
+.second .container .addres{
+    color: #777;
+    text-transform: capitalize;
+}
+.second .container .text{
+    color: #777;
+    margin-top: 15px;
+}
+.second .container .price{
+    margin-top: 15px;
+        color: var(--third-color);
+        font-weight: 800;
+        font-size: 20px;
+}
+.second .container .show{
+        color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 45px;
+            margin-top: 15px;
+            background-color: var(--third-color);
+            cursor: pointer;
+            border-radius: 7px;
+}
+/* end second section */
+/* start third section */
+.third{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--third-color);
+    position: relative;
+    text-align: center;
+}
+.third .one{
+        font-size: 35px;
+            color: #fff;
+            font-style: italic;
+            margin-bottom: 50px;
+}
+.third .two{
+        width: 180px;
+            height: 60px;
+            background-color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            color: var(--third-color);
+            border: 1px solid #fff;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 7px;
+}
+
+/* end third section */
+/* start fourth section */
+.fourth{
+    display: flex;
+    height: 400px;
+}
+@media(max-width:767px){
+    .fourth>div:last-child{
+        display: none;
+    }
+    .fourth .one .price{
+        top: 70% !important;
+    } 
+}
+.fourth>div{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    padding: var(--main-padding);
+    position: relative;
+}
+.fourth > div:last-child{
+    background-color: #777;
+}
+.fourth .one h3{
+    position: absolute;
+        left: 30%;
+        margin-bottom: 15px;
+        top: 15%;
+}
+.fourth .one .addres{
+        position: absolute;
+            left: 30%;
+            top: 30%;
+        }
+.fourth .one .text{
+    text-align: left;
+        position: absolute;
+        left: 30%;
+        top: 40%;
+}
+.fourth .one .price{
+    font-weight: bold;
+        font-size: 30px;
+        position: absolute;
+        left: 30%;
+        top: 60%;
+}
+/* end fourth section */
+/* start fifth section */
+.fifth {
+    display: flex;
+    height: 400px;
+}
+@media(max-width:767px) {
+    .fifth>div:first-child {
+        display: none;
+    }
+
+    .fifth .two .price {
+        top: 70% !important;
+    }
+}
+.fifth>div {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    padding: var(--main-padding);
+    position: relative;
+}
+
+.fifth>div:first-child {
+    background-color: #777;
+}
+
+.fifth .two h3 {
+    position: absolute;
+    left: 30%;
+    margin-bottom: 15px;
+    top: 15%;
+}
+
+.fifth .two .addres {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+
+.fifth .two .text {
+    text-align: left;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+
+.fifth .two .price {
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+}
+/* end fifth section */
+/* start footer */
+footer{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--third-color);
+}
+footer .container{
+position: relative;
+}
+footer img{
+    width: 50px;
+        position: absolute;
+        left: 0%;
+}
+@media(max-width:767px){
+footer img{
+            left: 5%;
+}
+}
+footer .right{
+    color: #fff;
+        position: absolute;
+        left: 15%;
+}
+.icons{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        padding: 0 15px 0px;
+}
+/* end footer */
